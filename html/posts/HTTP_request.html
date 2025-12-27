@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Gửi HTTP Request bằng JavaScript</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+
+<body class="bg-slate-900 text-white">
+<main class="max-w-3xl mx-auto py-16 px-6">
+
+<a href="../index.html" class="text-cyan-400 hover:underline">← Quay lại</a>
+
+<header class="mt-6">
+  <p class="inline-block badge">JavaScript • HTTP</p>
+  <h1 class="text-4xl font-extrabold text-cyan-300 mt-4">
+    Gửi HTTP Request bằng JavaScript
+  </h1>
+</header>
+
+<article class="prose prose-invert mt-8 space-y-6">
+  <p>
+    JavaScript cung cấp <strong>fetch API</strong> để gửi các HTTP request từ trình
+    duyệt đến server. Đây là cách phổ biến trong các ứng dụng web hiện đại.
+  </p>
+
+  <h2>💻 Ví dụ minh họa</h2>
+  <pre><code>
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data));
+  </code></pre>
+
+  <p>
+    Đoạn mã trên gửi một request GET đến server và xử lý dữ liệu trả về.
+  </p>
+
+  <h2>📌 Kết luận</h2>
+  <p>
+    Fetch API giúp JavaScript giao tiếp với server một cách linh hoạt, đóng vai trò
+    quan trọng trong việc xây dựng các ứng dụng web động.
+  </p>
+</article>
+
+</main>
+</body>
+</html>

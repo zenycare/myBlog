@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Lập Trình Mạng – Java & JavaScript</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/post.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<header class="fixed top-0 w-full bg-black/50 backdrop-blur shadow z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-cyan-400">🌸 My Portfolio</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-cyan-400">Trang chủ</a>
+      <a href="about.html" class="hover:text-cyan-400">Giới thiệu</a>
+
+      <a href="blog.html" class="hover:text-cyan-400">Blog</a>
+      <a href="contact.html" class="hover:text-cyan-400">Liên hệ</a>
+    </div>
+  </nav>
+</header>
+<body class="bg-slate-900 text-white">
+
+<main class="max-w-6xl mx-auto px-6 pt-28 pb-24">
+
+  <section id="blog" class="reveal active mt-6">
+    <h2 class="text-2xl font-bold text-center text-cyan-400 mb-8">✨ Bài viết</h2>
+
+    <div class="flex justify-center gap-4 mb-8">
+      <button class="filter-btn active" onclick="filterPosts('all', this)">Tất cả</button>
+      <button class="filter-btn" onclick="filterPosts('java', this)">Java</button>
+      <button class="filter-btn" onclick="filterPosts('javascript', this)">JavaScript</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <a href="posts/TQ.html" class="post-link">
+        <article class="post-card java">
+          <span class="tag java">JAVA</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">Tìm hiểu về lập trình mạng</h3>
+          <p class="desc mt-2">TCP Socket cơ bản</p>
+        </article>
+      </a>
+
+      <a href="posts/client_server.html" class="post-link">
+        <article class="post-card java">
+          <span class="tag java">JAVA</span>
+          <p class="meta">12/2025 • 5 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">Mô hình Client – Server</h3>
+          <p class="desc mt-2">UDP Datagram</p>
+        </article>
+      </a>
+
+      <a href="posts/TCP_UDP.html" class="post-link">
+        <article class="post-card java">
+          <span class="tag java">JAVA</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">Chat Client–Server</h3>
+          <p class="desc mt-2">Giao thức TCP và UDP</p>
+        </article>
+      </a>
+
+      <a href="posts/TCP_server.html" class="post-link">
+        <article class="post-card java">
+          <span class="tag java">JAVA</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">TCP Server</h3>
+          <p class="desc mt-2">Xây dựng TCP Server bằng Java</p>
+        </article>
+      </a>
+
+      <a href="posts/TCP_client.html" class="post-link">
+        <article class="post-card java">
+          <span class="tag java">JAVA</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">TCP Client</h3>
+          <p class="desc mt-2">Xây dựng TCP Client bằng Java</p>
+        </article>
+      </a>
+
+      <a href="posts/HTTP.html" class="post-link">
+        <article class="post-card javascript">
+          <span class="tag javascript">JS</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">HTTP & Fetch API</h3>
+          <p class="desc mt-2">HTTP là nền tảng của mạng Internet hiện đại.</p>
+        </article>
+      </a>
+
+      <a href="posts/HTTP_request.html" class="post-link">
+        <article class="post-card javascript">
+          <span class="tag javascript">JS</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">HTTP request</h3>
+          <p class="desc mt-2">Gửi HTTP Request bằng JavaScript</p>
+        </article>
+      </a>
+
+      <a href="posts/WebSocket.html" class="post-link">
+        <article class="post-card javascript">
+          <span class="tag javascript">JS</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">WebSocket Chat</h3>
+          <p class="desc mt-2">WebSocket và giao tiếp thời gian thực</p>
+        </article>
+      </a>
+
+      <a href="posts/JS.html" class="post-link">
+        <article class="post-card javascript">
+          <span class="tag javascript">JS</span>
+          <p class="meta">03/2025 • 10 phút đọc</p>
+          <h3 class="mt-2 text-lg font-semibold">JavaScript</h3>
+          <p class="desc mt-2">Tìm hiểu về JS</p>
+        </article>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-slate-700 py-6 text-center text-slate-400">
+  © 2025 • Blog học tập Lập Trình Mạng • Sinh viên CNTT
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng TCP Client bằng Java</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+
+<body class="bg-slate-900 text-white">
+<main class="max-w-3xl mx-auto py-16 px-6">
+
+<a href="../index.html" class="text-cyan-400 hover:underline">← Quay lại</a>
+
+<header class="mt-6">
+  <p class="inline-block badge">Java • TCP</p>
+  <h1 class="text-4xl font-extrabold text-cyan-300 mt-4">
+    Xây dựng TCP Client bằng Java
+  </h1>
+</header>
+
+<article class="prose prose-invert mt-8 space-y-6">
+  <p>
+    Sau khi xây dựng Server, Client là thành phần dùng để kết nối và gửi yêu cầu
+    đến Server. Trong Java, lớp <strong>Socket</strong> được sử dụng để tạo TCP Client.
+  </p>
+
+  <h2>🎯 Mục tiêu</h2>
+  <p>
+    Hiểu cách tạo Client kết nối đến Server thông qua địa chỉ IP và cổng.
+  </p>
+
+  <h2>💻 Ví dụ minh họa</h2>
+  <pre><code>
+Socket socket = new Socket("localhost", 1234);
+System.out.println("Kết nối thành công");
+  </code></pre>
+
+  <p>
+    Ở ví dụ trên, Client kết nối đến Server đang chạy trên cùng máy
+    (<code>localhost</code>) và cổng 1234.
+  </p>
+
+  <h2>📌 Kết luận</h2>
+  <p>
+    TCP Client và TCP Server luôn hoạt động song song. Hiểu được vai trò của Client
+    giúp sinh viên nắm rõ hơn quá trình trao đổi dữ liệu trong lập trình mạng.
+  </p>
+</article>
+
+</main>
+</body>
+</html>

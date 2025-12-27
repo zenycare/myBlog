@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiến thức JavaScript cơ bản</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-white">
+
+<!-- HEADER -->
+<header class="bg-slate-900/80 backdrop-blur border-b border-slate-700 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-cyan-400">📘 JavaScript Knowledge</h1>
+    <a href="blog.html" class="text-slate-300 hover:text-cyan-400">← Quay lại Blog</a>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+  <!-- GIỚI THIỆU -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">1. JavaScript là gì?</h2>
+    <p class="text-slate-300 leading-relaxed">
+      JavaScript là một ngôn ngữ lập trình phổ biến được sử dụng chủ yếu trong phát triển web.
+      JavaScript cho phép tạo ra các trang web động, có khả năng tương tác với người dùng
+      như xử lý sự kiện, kiểm tra dữ liệu, thay đổi nội dung trang mà không cần tải lại.
+    </p>
+  </section>
+
+  <!-- BIẾN -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">2. Biến và kiểu dữ liệu</h2>
+    <p class="text-slate-300 mb-4">
+      Trong JavaScript, biến được dùng để lưu trữ dữ liệu. Có 3 cách khai báo biến:
+    </p>
+
+    <ul class="list-disc list-inside text-slate-300 mb-4">
+      <li><strong>var</strong> – cách cũ, ít dùng</li>
+      <li><strong>let</strong> – dùng cho biến có thể thay đổi</li>
+      <li><strong>const</strong> – dùng cho hằng số</li>
+    </ul>
+
+    <pre class="bg-slate-800 p-4 rounded-lg text-cyan-300">
+let name = "Giang";
+const age = 20;
+let isStudent = true;
+    </pre>
+  </section>
+
+  <!-- ĐIỀU KIỆN -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">3. Câu lệnh điều kiện</h2>
+    <pre class="bg-slate-800 p-4 rounded-lg text-cyan-300">
+let score = 8;
+
+if (score >= 5) {
+  console.log("Đậu");
+} else {
+  console.log("Rớt");
+}
+    </pre>
+  </section>
+
+  <!-- VÒNG LẶP -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">4. Vòng lặp</h2>
+    <pre class="bg-slate-800 p-4 rounded-lg text-cyan-300">
+for (let i = 1; i <= 5; i++) {
+  console.log("Lần lặp: " + i);
+}
+    </pre>
+  </section>
+
+  <!-- HÀM -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">5. Hàm trong JavaScript</h2>
+    <pre class="bg-slate-800 p-4 rounded-lg text-cyan-300">
+function sayHello(name) {
+  return "Xin chào " + name;
+}
+
+console.log(sayHello("Giang"));
+    </pre>
+  </section>
+
+  <!-- DOM -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">6. DOM và sự kiện</h2>
+    <pre class="bg-slate-800 p-4 rounded-lg text-cyan-300">
+document.getElementById("btn")
+  .addEventListener("click", function() {
+    alert("Bạn vừa nhấn nút!");
+  });
+    </pre>
+
+    <button id="btn"
+      class="mt-4 px-6 py-2 bg-cyan-400 text-black rounded-lg hover:bg-cyan-300 transition">
+      Nhấn thử
+    </button>
+  </section>
+
+  <!-- TỔNG KẾT -->
+  <section>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-4">7. Tổng kết</h2>
+    <p class="text-slate-300 leading-relaxed">
+      JavaScript là ngôn ngữ rất quan trọng trong phát triển web hiện nay.
+      Việc nắm vững kiến thức cơ bản sẽ giúp sinh viên học tốt các framework hiện đại.
+    </p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-700 py-6 text-center text-slate-400">
+  © 2025 • Bài viết kiến thức JavaScript – Portfolio sinh viên CNTT
+</footer>
+
+</body>
+</html>

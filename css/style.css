@@ -1,0 +1,253 @@
+:root {
+  --bg-1: #0f1724;
+  --bg-2: #0b1220;
+  --accent: #22d3ee;
+  --accent-2: #38bdf8;
+  --muted: rgba(255,255,255,0.75);
+  --card-bg: rgba(255,255,255,0.03);
+  --glass: rgba(255,255,255,0.04);
+  --glass-strong: rgba(255,255,255,0.06);
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+header nav a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.18s ease;
+}
+
+header nav a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(34,211,238,0.18);
+  background: transparent;
+  color: var(--accent);
+}
+
+/* REVEAL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SKILL BAR */
+.skill-bg {
+  width: 100%;
+  height: 12px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 9999px;
+}
+.skill-bar {
+  height: 12px;
+  width: 0;
+  border-radius: 9999px;
+  transition: width 1.5s ease;
+}
+
+/* FILTER */
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 9999px;
+  border: 1px solid rgba(34,211,238,0.4);
+  color: #67e8f9;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: rgba(34,211,238,0.2);
+  box-shadow: 0 0 20px rgba(34,211,238,0.4);
+}
+
+/* BLOG CARD */
+.post-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(34,211,238,0.25);
+  padding: 24px;
+  border-radius: 20px;
+  transition: 0.4s;
+  position: relative;
+}
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(34,211,238,0.4);
+}
+
+/* TAG */
+.tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: rgba(34,211,238,0.2);
+  color: #67e8f9;
+}
+.tag.java {
+  background: rgba(251,146,60,0.2);
+  color: #fdba74;
+}
+.tag.javascript {
+  background: rgba(34,211,238,0.2);
+  color: #67e8f9;
+}
+
+/* TEXT */
+.meta {
+  font-size: 13px;
+  opacity: 0.6;
+}
+.desc {
+  opacity: 0.75;
+}
+.section {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 40px;
+}
+
+/* Intro avatar */
+.intro-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 16px auto;
+  border: 4px solid rgba(244,114,182,0.12);
+  box-shadow: 0 8px 24px rgba(245,158,184,0.12);
+}
+
+@media (max-width: 480px) {
+  .intro-avatar { width: 96px; height: 96px; margin-bottom: 12px; }
+}
+
+/* layout for intro: avatar on right */
+.intro-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.intro-text { flex: 1; text-align: left; }
+
+.intro-avatar-right { width: 220px; height: 220px; border-radius: 16px; margin: 0; }
+
+@media (max-width: 720px) {
+  .intro-inner { flex-direction: column-reverse; text-align: center; }
+  .intro-text { text-align: center; }
+  .intro-avatar-right { width: 120px; height: 120px; border-radius: 12px; }
+}
+
+/* Skills box */
+.skills-box {
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(56,189,248,0.15);
+}
+
+.skill-item {
+  display: grid;
+  grid-template-columns: 120px 1fr 60px;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.bar {
+  height: 10px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  transition: width 1.2s cubic-bezier(.22,.9,.32,1);
+  position: relative;
+  z-index: 1;
+}
+
+.bar-fill.java {
+  background: linear-gradient(90deg, #f97316, #fb7185);
+}
+
+.bar-fill.js {
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+}
+
+.bar-fill.python {
+  background: linear-gradient(90deg, #9f7aea, #f0abfc);
+}
+.bar-fill.py {
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+}
+/* subtle shine on filled part */
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.35), rgba(255,255,255,0.06));
+  transform: translateX(-40px) skewX(-15deg);
+  opacity: 0;
+  transition: transform 1s ease, opacity 0.6s ease;
+}
+.bar-fill.play::after {
+  opacity: 1;
+  transform: translateX(300px) skewX(-15deg);
+}
+
+/* percent text anchored to right edge of the full bar */
+.bar .percent {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #e6eef6;
+  z-index: 3;
+  pointer-events: none;
+}

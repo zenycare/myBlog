@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng TCP Server bằng Java</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+
+<body class="bg-slate-900 text-white">
+<main class="max-w-3xl mx-auto py-16 px-6">
+
+<a href="../index.html" class="text-cyan-400 hover:underline">← Quay lại</a>
+
+<header class="mt-6">
+  <p class="inline-block badge">Java • TCP</p>
+  <h1 class="text-4xl font-extrabold text-cyan-300 mt-4">
+    Xây dựng TCP Server bằng Java
+  </h1>
+</header>
+
+<article class="prose prose-invert mt-8 space-y-6">
+  <p>
+    Trong lập trình mạng với Java, giao thức TCP thường được sử dụng để xây dựng
+    các ứng dụng cần độ tin cậy cao. Java cung cấp lớp <strong>ServerSocket</strong>
+    giúp việc tạo TCP Server trở nên đơn giản và dễ tiếp cận cho sinh viên.
+  </p>
+
+  <h2>🎯 Mục tiêu</h2>
+  <p>
+    Hiểu cách tạo một TCP Server đơn giản có khả năng lắng nghe và chấp nhận kết
+    nối từ Client.
+  </p>
+
+  <h2>⚙️ Nguyên lý hoạt động</h2>
+  <p>
+    Server sẽ mở một cổng (port) cố định, sau đó chờ Client kết nối. Khi có Client
+    kết nối thành công, Server có thể gửi hoặc nhận dữ liệu.
+  </p>
+
+  <h2>💻 Ví dụ minh họa</h2>
+  <pre><code>
+ServerSocket server = new ServerSocket(1234);
+Socket client = server.accept();
+System.out.println("Client đã kết nối");
+  </code></pre>
+
+  <p>
+    Trong đoạn mã trên, Server sẽ lắng nghe tại cổng 1234. Lệnh
+    <code>accept()</code> sẽ dừng chương trình cho đến khi có Client kết nối.
+  </p>
+
+  <h2>📌 Kết luận</h2>
+  <p>
+    TCP Server là thành phần quan trọng trong các hệ thống mạng. Việc nắm được
+    cách xây dựng Server giúp sinh viên hiểu rõ hơn cách các ứng dụng mạng hoạt động
+    phía sau.
+  </p>
+</article>
+
+</main>
+</body>
+</html>

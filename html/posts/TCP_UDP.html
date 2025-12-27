@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giao thức TCP và UDP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+
+<body class="bg-slate-900 text-white">
+<main class="max-w-3xl mx-auto py-16 px-6">
+
+<a href="../index.html" class="text-cyan-400 hover:underline">← Quay lại</a>
+
+<header class="mt-6">
+  <p class="inline-block badge">Protocol • Transport Layer</p>
+  <h1 class="text-4xl font-extrabold text-cyan-300 mt-4">
+    Giao thức TCP và UDP
+  </h1>
+</header>
+
+<article class="prose prose-invert mt-8 space-y-6">
+  <p>
+    TCP và UDP là hai giao thức quan trọng thuộc tầng vận chuyển (Transport Layer)
+    trong mô hình mạng. Mỗi giao thức có đặc điểm và mục đích sử dụng khác nhau.
+  </p>
+
+  <h2>🔒 TCP (Transmission Control Protocol)</h2>
+  <p>
+    TCP là giao thức hướng kết nối, đảm bảo dữ liệu được truyền đầy đủ, đúng thứ tự
+    và không bị mất. Trước khi truyền dữ liệu, TCP sẽ thiết lập kết nối giữa hai
+    bên thông qua quá trình bắt tay (handshake).
+  </p>
+
+  <p>
+    Do có cơ chế kiểm soát lỗi và xác nhận dữ liệu, TCP phù hợp với các ứng dụng
+    yêu cầu độ tin cậy cao.
+  </p>
+
+  <h2>⚡ UDP (User Datagram Protocol)</h2>
+  <p>
+    UDP là giao thức không kết nối, dữ liệu được gửi đi mà không cần xác nhận.
+    Điều này giúp UDP có tốc độ truyền nhanh hơn nhưng không đảm bảo dữ liệu đến
+    đầy đủ.
+  </p>
+
+  <h2>📊 So sánh và ứng dụng</h2>
+  <ul class="list-disc pl-6">
+    <li>TCP: Web, Email, truyền file</li>
+    <li>UDP: Game online, video call, livestream</li>
+  </ul>
+
+  <h2>📌 Kết luận</h2>
+  <p>
+    Việc lựa chọn TCP hay UDP phụ thuộc vào yêu cầu của ứng dụng. Hiểu rõ ưu và
+    nhược điểm của từng giao thức giúp sinh viên áp dụng đúng trong thực tế.
+  </p>
+</article>
+
+</main>
+</body>
+</html>

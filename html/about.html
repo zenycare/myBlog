@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Giới thiệu bản thân</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/post.css">
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur border-b border-slate-700 z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="font-extrabold text-lg tracking-wide text-cyan-400">
+      🌸 My Portfolio
+    </h1>
+    <div class="space-x-6 text-slate-300">
+      <a href="index.html" class="hover:text-cyan-400 transition">Trang chủ</a>
+      <a href="about.html" class="text-cyan-400 font-semibold">Giới thiệu</a>
+      <a href="blog.html" class="hover:text-cyan-400 transition">Blog</a>
+      <a href="contact.html" class="hover:text-cyan-400 transition">Liên hệ</a>
+    </div>
+  </nav>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 pt-32 pb-24">
+
+  <!-- HERO -->
+  <section class="bg-slate-800/70 rounded-2xl p-8 md:p-12
+                  grid md:grid-cols-3 gap-10 items-center
+                  shadow-xl border border-slate-700">
+    <div class="flex justify-center">
+      <img src="../asset/avatar.jpg"
+           alt="Ảnh đại diện"
+           class="w-48 h-48 rounded-full object-cover
+                  border-4 border-cyan-400
+                  shadow-lg shadow-cyan-500/30">
+    </div>
+
+    <div class="md:col-span-2">
+      <h1 class="text-4xl font-extrabold text-cyan-300">
+        Nguyễn Thị Cẩm Giang
+      </h1>
+
+      <p class="mt-4 text-slate-200 text-lg leading-relaxed">
+        Sinh viên ngành <span class="font-semibold text-cyan-400">Công nghệ Thông tin</span>,
+        định hướng phát triển trong lĩnh vực
+        <span class="font-semibold text-cyan-400">lập trình phần mềm</span>.
+      </p>
+
+      <p class="mt-4 text-slate-400">
+        Trang portfolio này được xây dựng nhằm giới thiệu bản thân,
+        quá trình học tập và các chứng chỉ đã hoàn thành trong thời gian học.
+      </p>
+    </div>
+  </section>
+
+  <!-- THÔNG TIN -->
+  <section class="mt-20">
+    <h2 class="text-2xl font-bold text-cyan-300 mb-6">
+      🎓 Thông tin cá nhân
+    </h2>
+
+    <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+      <ul class="grid md:grid-cols-2 gap-5 text-slate-300">
+        <li>📌 Ngành học: Công nghệ Thông tin</li>
+        <li>💻 Lĩnh vực quan tâm: Lập trình Web</li>
+        <li>🧠 Ngôn ngữ chính: Java, JavaScript</li>
+        <li>🎯 Mục tiêu: Nắm vững nền tảng, sẵn sàng thực tập</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CHỨNG CHỈ -->
+  <section class="mt-20">
+    <h2 class="text-2xl font-bold text-cyan-300 mb-4">
+      📜 Chứng chỉ & Tín chỉ
+    </h2>
+    <p class="text-slate-400 mb-8">
+      Một số chứng chỉ và minh chứng học tập tiêu biểu.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-slate-800 rounded-xl overflow-hidden
+                  hover:-translate-y-2 hover:shadow-cyan-500/20
+                  transition-all duration-300 shadow-lg border border-slate-700">
+        <img src="../asset/chungchi1.jpg" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-cyan-300">
+            Networking Basics
+          </h3>
+          <p class="text-slate-400 text-sm mt-1">
+            Kiến thức cơ bản về mạng máy tính
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-xl overflow-hidden
+                  hover:-translate-y-2 hover:shadow-cyan-500/20
+                  transition-all duration-300 shadow-lg border border-slate-700">
+        <img src="../asset/chungchi2.jpg" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-cyan-300">
+            JavaScript Essentials 1
+          </h3>
+          <p class="text-slate-400 text-sm mt-1">
+            Nền tảng JavaScript
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-xl overflow-hidden
+                  hover:-translate-y-2 hover:shadow-cyan-500/20
+                  transition-all duration-300 shadow-lg border border-slate-700">
+        <img src="../asset/chungchi3.jpg" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-cyan-300">
+            JavaScript Essentials 2
+          </h3>
+          <p class="text-slate-400 text-sm mt-1">
+            Mảng, object & tư duy lập trình
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MỤC TIÊU -->
+  <section class="mt-20 bg-slate-800 rounded-xl p-8 border border-slate-700">
+    <h2 class="text-2xl font-bold text-cyan-300 mb-4">
+      🎯 Mục tiêu học tập
+    </h2>
+    <p class="text-slate-300 leading-relaxed">
+      Mình mong muốn tiếp tục nâng cao kỹ năng lập trình,
+      tham gia các dự án nhỏ để tích lũy kinh nghiệm
+      và chuẩn bị tốt cho kỳ thực tập cũng như công việc sau này.
+    </p>
+  </section>
+
+</main>
+
+<footer class="border-t border-slate-700 py-6 text-center text-slate-400">
+  © 2025 • Portfolio sinh viên CNTT
+</footer>
+
+</body>
+</html>

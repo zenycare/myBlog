@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Additional CSS -->
+  <link rel="stylesheet" href="../css/post.css">
+
+  <!-- CSS riêng -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+
+<!-- NAVBAR -->
+   <a href="index.html" class="hover:text-cyan-400">Trang chủ</a>
+<header class="fixed top-0 w-full bg-black/50 backdrop-blur shadow z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-cyan-400">🌸 My Portfolio</h1>
+    <div class="space-x-6">
+        <a href="index.html" class="hover:text-cyan-400">Trang chủ</a>
+      <a href="about.html" class="hover:text-cyan-400">Giới thiệu</a>
+
+      <a href="blog.html" class="hover:text-cyan-400">Blog</a>
+      <a href="contact.html" class="hover:text-cyan-400">Liên hệ</a>
+    </div>
+  </nav>
+</header>
+
+<main class="pt-28 space-y-32">
+
+<!-- INTRO -->
+<section id="intro" class="reveal active max-w-4xl mx-auto bg-white/5 p-10 rounded-3xl">
+  <div class="intro-inner">
+    <div class="intro-text">
+      <h2 class="text-3xl font-bold text-rose-500 mb-4">Xin chào </h2>
+      <p class="opacity-70">11/04/2004</p>
+       Mình là Nguyễn Thị Cẩm Giang sinh viên Công nghệ Thông tin với định hướng phát triển trong lĩnh vực lập trình phần mềm. Mình đặc biệt quan tâm đến cách các hệ thống giao tiếp với nhau thông qua mạng, từ Socket trong Java đến các ứng dụng Web sử dụng JavaScript.
+
+Portfolio này được xây dựng nhằm ghi lại quá trình học tập,dự án nhỏ và kiến thức mình tích lũy trong quá trình học.
+    </div>
+
+    <img src="../asset/avatar.jpg" alt="Ảnh đại diện" class="intro-avatar intro-avatar-right">
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="section-title">💡 Kỹ năng</h2>
+
+  <div class="skills-box">
+    <!-- Skill -->
+    <div class="skill-item">
+      <span>Java</span>
+      <div class="bar">
+        <div class="bar-fill java" data-percent="70"></div>
+        <span class="percent">0%</span>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <span>C/C++</span>
+      <div class="bar">
+        <div class="bar-fill python" data-percent="60"></div>
+        <span class="percent">0%</span>
+      </div>
+    </div>
+    <div class="skill-item">
+      <span>JavaScript</span>
+      <div class="bar">
+        <div class="bar-fill js" data-percent="80"></div>
+        <span class="percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 frameworks">
+    <h3 class="text-xl font-semibold mb-3">⚙️ Frameworks & Tools</h3>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h4 class="font-medium mb-2">Frontend</h4>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700">React</span>
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700">Next.js</span>
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700">Flutter</span>
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700">Bootstrap</span>
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700">Tailwind CSS</span>
+        </div>
+      <div>
+        <h4 class="font-medium mb-2">Backend</h4>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700">Node.js</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="reveal max-w-6xl mx-auto">
+  <h2 class="text-2xl font-bold text-center text-cyan-400 mb-10">✨ Blog</h2>
+
+  <div class="flex justify-center gap-4 mb-10">
+    <button class="filter-btn active" onclick="filterPosts('all', this)">Tất cả</button>
+    <button class="filter-btn" onclick="filterPosts('java', this)">Java</button>
+    <button class="filter-btn" onclick="filterPosts('javascript', this)">JavaScript</button>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <a href="posts/TQ.html" class="post-link">
+    <div class="post-card java">
+      <span class="tag java">JAVA</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>Tìm hiểu về lập trình mạng</h3>
+      <p class="desc">TCP Socket cơ bản</p>
+    </div>
+</a>
+ <a href="posts/client_server.html" class="post-link">
+    <div class="post-card java">
+      <span class="tag java">JAVA</span>
+      <p class="meta">12/2025 • 5 phút đọc</p>
+      <h3>Mô hình Client – Server</h3>
+      <p class="desc">UDP Datagram</p>
+    </div>
+    </a>
+    <a href="posts/TCP_UDP.html" class="post-link">
+    <div class="post-card java">
+      <span class="tag java">JAVA</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>Chat Client–Server</h3>
+      <p class="desc">Giao thức TCP và UDP</p>
+    </div>
+</a>
+    <a href="posts/TCP_server.html" class="post-link">
+    <div class="post-card java">
+      <span class="tag java">JAVA</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>TCP SERVER</h3>
+      <p class="desc"> Xây dựng TCP Server bằng Java</p>
+    </div>
+</a>
+<a href="posts/TCP_client.html" class="post-link">
+    <div class="post-card java">
+      <span class="tag java">JAVA</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>TCP client</h3>
+      <p class="desc">Xây dựng TCP Client bằng Java</p>
+    </div>
+</a>
+<a href="posts/HTTP.html" class="post-link">
+    <div class="post-card javascript">
+      <span class="tag javascript">JS</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>HTTP & Fetch API</h3>
+      <p class="desc">HTTP là nền tảng của mạng Internet hiện đại.</p>
+    </div>
+</a>
+<a href="posts/HTTP_request.html" class="post-link">
+    <div class="post-card javascript">
+      <span class="tag javascript">JS</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>HTTP request</h3>
+      <p class="desc">Gửi HTTP Request bằng JavaScript</p>
+    </div>
+</a>
+<a href="posts/WebSocket.html" class="post-link">
+    <div class="post-card javascript">
+      <span class="tag javascript">JS</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>WebSocket Chat</h3>
+      <p class="desc">WebSocket và giao tiếp thời gian thực</p>
+    </div>
+</a>
+<a href="posts/JS.html" class="post-link">
+    <div class="post-card javascript">
+      <span class="tag javascript">JS</span>
+      <p class="meta">03/2025 • 10 phút đọc</p>
+      <h3>JavaScript</h3>
+      <p class="desc">Tìm hiểu về JS</p>
+    </div>
+</a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal max-w-4xl mx-auto text-center bg-white/5 p-10 rounded-3xl">
+  <h2 class="text-2xl font-bold text-cyan-400 mb-4">📩 Liên hệ</h2>
+  <p>Email: ngthcgiangvvk@gmail.com</p>
+  <p>Số điện thoại: 0824014xxx</p>
+</section>
+
+</main>
+
+<footer class="text-center py-10 opacity-60">
+  © 2025 Nguyễn Thị Cẩm Giang
+</footer>
+
+<!-- JS riêng -->
+<script src="../js/main.js"></script>
+</body>
+</html>
