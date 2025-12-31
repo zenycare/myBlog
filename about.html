@@ -77,51 +77,55 @@
       Một số chứng chỉ và minh chứng học tập tiêu biểu.
     </p>
 
-    <div class="grid md:grid-cols-3 gap-6">
+<div class="grid md:grid-cols-3 gap-6">
 
-      <div class="bg-slate-800 rounded-xl overflow-hidden
-                  hover:-translate-y-2 hover:shadow-cyan-500/20
-                  transition-all duration-300 shadow-lg border border-slate-700">
-        <img src="asset/nw.png" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="font-semibold text-cyan-300">
-            Networking Basics
-          </h3>
-          <p class="text-slate-400 text-sm mt-1">
-            Kiến thức cơ bản về mạng máy tính
-          </p>
-        </div>
-      </div>
-
-      <div class="bg-slate-800 rounded-xl overflow-hidden
-                  hover:-translate-y-2 hover:shadow-cyan-500/20
-                  transition-all duration-300 shadow-lg border border-slate-700">
-        <img src="asset/1.png" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="font-semibold text-cyan-300">
-            JavaScript Essentials 1
-          </h3>
-          <p class="text-slate-400 text-sm mt-1">
-            Nền tảng JavaScript
-          </p>
-        </div>
-      </div>
-
-      <div class="bg-slate-800 rounded-xl overflow-hidden
-                  hover:-translate-y-2 hover:shadow-cyan-500/20
-                  transition-all duration-300 shadow-lg border border-slate-700">
-        <img src="asset/2.png" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="font-semibold text-cyan-300">
-            JavaScript Essentials 2
-          </h3>
-          <p class="text-slate-400 text-sm mt-1">
-            Mảng, object & tư duy lập trình
-          </p>
-        </div>
-      </div>
-
+  <div onclick="openImage('asset/nw.png')"
+       class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden
+              hover:-translate-y-2 hover:shadow-cyan-500/20
+              transition-all duration-300 shadow-lg border border-slate-700">
+    <img src="asset/nw.png" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="font-semibold text-cyan-300">
+        Networking Basics
+      </h3>
+      <p class="text-slate-400 text-sm mt-1">
+        Kiến thức cơ bản về mạng máy tính
+      </p>
     </div>
+  </div>
+
+  <div onclick="openImage('asset/1.png')"
+       class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden
+              hover:-translate-y-2 hover:shadow-cyan-500/20
+              transition-all duration-300 shadow-lg border border-slate-700">
+    <img src="asset/1.png" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="font-semibold text-cyan-300">
+        JavaScript Essentials 1
+      </h3>
+      <p class="text-slate-400 text-sm mt-1">
+        Nền tảng JavaScript
+      </p>
+    </div>
+  </div>
+
+  <div onclick="openImage('asset/2.png')"
+       class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden
+              hover:-translate-y-2 hover:shadow-cyan-500/20
+              transition-all duration-300 shadow-lg border border-slate-700">
+    <img src="asset/2.png" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="font-semibold text-cyan-300">
+        JavaScript Essentials 2
+      </h3>
+      <p class="text-slate-400 text-sm mt-1">
+        Mảng, object & tư duy lập trình
+      </p>
+    </div>
+  </div>
+
+</div>
+
   </section>
 
   <!-- MỤC TIÊU -->
@@ -141,6 +145,46 @@
 <footer class="border-t border-slate-700 py-6 text-center text-slate-400">
   © 2025 • Portfolio sinh viên CNTT
 </footer>
+<!-- IMAGE PREVIEW MODAL -->
+<div id="imageModal"
+     class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+
+  <div class="relative animate-zoom">
+    <button onclick="closeImage()"
+            class="absolute -top-4 -right-4 bg-white text-black
+                   rounded-full w-9 h-9 font-bold shadow-lg">
+      ✕
+    </button>
+
+    <img id="modalImage"
+         class="max-w-[90vw] max-h-[90vh]
+                rounded-xl shadow-2xl border-4 border-cyan-400">
+  </div>
+
+</div>
+<script>
+  function openImage(src) {
+    const modal = document.getElementById("imageModal");
+    const image = document.getElementById("modalImage");
+
+    image.src = src;
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+
+  function closeImage() {
+    const modal = document.getElementById("imageModal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+
+  // Click nền tối để đóng
+  document.getElementById("imageModal").addEventListener("click", function(e) {
+    if (e.target.id === "imageModal") {
+      closeImage();
+    }
+  });
+</script>
 
 </body>
 </html>
